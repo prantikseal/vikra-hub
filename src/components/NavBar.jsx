@@ -8,20 +8,27 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-full py-12 px-6 absolute z-10 h-48" style={{
-        background: 'linear-gradient(180deg, #fdd8cb 0%, rgba(253, 216, 203, 0.7) 100%)',
-      }}>
+      <nav className="w-full py-12 px-6 absolute z-10 h-48">
+        <div className="absolute h-48 -z-10 opacity-50" style={{
+          background: 'linear-gradient(180deg, rgba(253,216,203,1) 0%, rgba(224,154,128,1) 50%, rgba(253,216,203,1) 100%)',
+          top: `0`,
+          left: `0`,
+          width: `100%`,
+          height: `-webkit-fill-available`
+        }}>
+
+        </div>
         <div className="container mx-auto flex justify-between items-center">
-          <Logo />
-          <div className="hidden md:flex space-x-6">
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="#weekly-cafe" className="">Weekly Cafe</NavLink>
-            <NavLink href="#cognition">Cognition</NavLink>
-            <NavLink href="#digital-store">Digital Store</NavLink>
-            <NavLink href="#about-me">About Me</NavLink>
+          <Logo className="relative flex items-center justify-start scale-125" />
+          <div className="hidden md:flex space-x-14">
+            <NavLink className=" font-extrabold" href="#home">Home</NavLink>
+            <NavLink className=" font-extrabold" href="#weekly-cafe">Vikra’s Cafe</NavLink>
+            <NavLink className=" font-extrabold" href="#cognition">Cognition</NavLink>
+            <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
+            <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink>
           </div>
           <div className="hidden md:block">
-            <button className="bg-[#E18D67] text-white px-4 py-2 rounded-full hover:bg-[#d17c56] transition-colors duration-300">
+            <button className="bg-[#DC724A] text-black font-extrabold px-9 py-4 rounded-full hover:bg-[#d17c56] transition-colors duration-300">
               Sign Up
             </button>
           </div>
@@ -41,7 +48,7 @@ const NavBar = () => {
       {/* Mobile menu */}
       <div
         className={`${open ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-          } absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-20`}
+          } absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-30`}
       >
         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
           <div className="pt-5 pb-6 px-5">
@@ -74,16 +81,16 @@ const NavBar = () => {
             </div>
             <div className="mt-6">
               <nav className="grid gap-y-8">
-                <NavLink href="#home">Home</NavLink>
-                <NavLink href="#weekly-cafe" className="text-blue-600">Weekly Cafe</NavLink>
-                <NavLink href="#cognition">Cognition</NavLink>
-                <NavLink href="#digital-store">Digital Store</NavLink>
-                <NavLink href="#about-me">About Me</NavLink>
+                <NavLink className=" font-extrabold" href="#home">Home</NavLink>
+                <NavLink className=" font-extrabold" href="#vikras-cafe">Vikra’s Cafe</NavLink>
+                <NavLink className=" font-extrabold" href="#cognition">Cognition</NavLink>
+                <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
+                <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink>
               </nav>
             </div>
           </div>
           <div className="py-6 px-5">
-            <button className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#E18D67] hover:bg-[#d17c56]">
+            <button className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#DC724A] hover:bg-[#d17c56]">
               Sign Up
             </button>
           </div>
