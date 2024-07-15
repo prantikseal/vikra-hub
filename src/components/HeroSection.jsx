@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const HeroSection = () => {
   return (
-    <div className="h-screen relative flex flex-col" style={{
+    <div className="h-screen relative flex flex-col -z-10" style={{
       backgroundColor: "#FDD8CB",
     }}>
       <NavBar />
@@ -24,17 +24,25 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="relative z-10">
-          <main className="flex-grow flex items-center justify-center">
-            <div className="text-center">
-              <div className="inline-block bg-white text-black rounded-full px-4 py-1 mb-4">
-                Newsletter by Vikra Vardhan
+          <main className="flex-grow pt-52 flex items-start justify-center h-screen w-full">
+            <div className="text-center flex-col items-center">
+              <div className="inline-block border border-black text-black rounded-full px-4 py-1 mb-4">
+                <div className="flex justify-center items-center gap-4">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="8" fill="#FF966B" />
+                  </svg>
+
+                  <span>Newsletter by <a className="" href="https://vikra.substack.com/" rel="noopener"><span className=" underline">Vikra Vardhan</span></a></span>
+                </div>
               </div>
-              <h1 className="text-6xl font-serif mb-4 flex items-center justify-center">
-                <Image src="/images/cognition-logo.png" width={100} height={100} alt="Hero Logo" />
+              <h1 className="text-6xl font-serif flex items-center justify-center pt-14 pb-24">
+                <Image decoding="async" height={600} width={600} src="https://framerusercontent.com/images/CqiivuhRcIaXznetbDxw4Cf6w4.svg" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover;image-rendering:auto" />
               </h1>
-              <p className="text-xl mb-6">
-                A newsletter entirely based<br />on Applied Knowledge
-              </p>
+              <div className="w-full flex justify-center items-center">
+                <p className=" max-w-lg text-4xl font-bold pb-12">
+                  A newsletter entirely based on Applied Knowledge
+                </p>
+              </div>
               <button className="bg-[#E18D67] text-white px-6 py-3 rounded-full text-lg font-semibold">
                 Signup Now
               </button>

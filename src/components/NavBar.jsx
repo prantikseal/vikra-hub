@@ -8,8 +8,8 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-full py-12 px-6 absolute z-10 h-48">
-        <div className="absolute h-48 -z-10 opacity-50" style={{
+      <nav className="w-full py-12 px-6 absolute z-10 h-64">
+        <div className="absolute h-64 -z-10 opacity-40" style={{
           background: 'linear-gradient(180deg, rgba(253,216,203,1) 0%, rgba(224,154,128,1) 50%, rgba(253,216,203,1) 100%)',
           top: `0`,
           left: `0`,
