@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Menu } from 'lucide-react';
 import Logo from './Logo';
+import { motion } from 'framer-motion';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -9,6 +10,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="w-full py-12 px-6 absolute z-10 h-64">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <div className="absolute h-64 -z-10 opacity-40" style={{
           background: 'linear-gradient(180deg, rgba(253,216,203,1) 0%, rgba(224,154,128,1) 50%, rgba(253,216,203,1) 100%)',
           top: `0`,
@@ -43,6 +45,7 @@ const NavBar = () => {
             </button>
           </div>
         </div>
+        </motion.div>
       </nav>
 
       {/* Mobile menu */}

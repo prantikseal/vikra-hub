@@ -1,6 +1,9 @@
+"use client"
 import React from 'react';
 import NavBar from './NavBar'; // Assuming you have a NavBar component
 import Image from 'next/image';
+import { AnimatePresence , motion } from 'framer-motion';
+
 
 const HeroSection = () => {
   return (
@@ -23,7 +26,7 @@ const HeroSection = () => {
           }}>
           </div>
         </div>
-        <div className="relative z-10">
+        <motion.div className="relative z-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
           <main className="flex-grow pt-52 flex items-start justify-center h-screen w-full">
             <div className="text-center flex-col items-center">
               <div className="inline-block border border-black text-black rounded-full px-4 py-1 mb-4">
@@ -48,7 +51,7 @@ const HeroSection = () => {
               </button>
             </div>
           </main>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
