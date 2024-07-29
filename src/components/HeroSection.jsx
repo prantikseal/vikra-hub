@@ -27,7 +27,7 @@ const HeroSection = () => {
           </div>
         </div>
         <motion.div className="relative z-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-          <main className="flex-grow pt-52 flex items-start justify-center h-screen w-full ">
+          <main className="flex-grow -pt-52 flex items-start justify-center  w-full ">
             <div className="text-center flex-col items-center">
               <div className="inline-block border border-black text-black rounded-full px-4 py-1 mb-4">
                 <div className="flex justify-center items-center gap-4">
