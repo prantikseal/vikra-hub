@@ -1,21 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* import harper-bold from './assets/fonts/Harper-Bold.woff2'; */
-
-@font-face {
-    font-family: 'Harper-Bold';
-    src: url('/harper/Harper-Bold Personal Use.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-#harper-bold {
-    font-family: 'Harper-Bold', sans-serif;
-}
-
-
-/* body {
-    background-color: #FFFAF5;
-} */
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        /* import harper-bold from './assets/fonts/Harper-Bold.woff2'; */
+        
+        @font-face {
+            font-family: 'Harper-Bold';
+            src: url('/harper/Harper-Bold Personal Use.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        #harper-bold {
+            font-family: 'Harper-Bold', sans-serif;
+        }
+        
+        .signup-button {
+            background-color: #f4a261;
+            /* Button background color */
+            border: none;
+            /* Remove border */
+            border-radius: 20px;
+            /* Rounded corners */
+            color: white;
+            /* Text color */
+            padding: 10px 20px;
+            /* Padding */
+            text-align: center;
+            /* Center text */
+            text-decoration: none;
+            /* Remove underline */
+            display: inline-block;
+            /* Inline block */
+            font-size: 16px;
+            /* Font size */
+            font-family: Arial, sans-serif;
+            /* Font family */
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            /* Shadow */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+        }
+        
+        body {
+            background-color: #FFFAF5;
+        }

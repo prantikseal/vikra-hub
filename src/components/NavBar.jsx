@@ -9,9 +9,9 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-full py-12 px-6 absolute z-10 h-64">
+      <nav className="w-full py-12 px-6 absolute z-10">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-        <div className="absolute h-64 -z-10 opacity-40" style={{
+        <div className="absolute -z-10 opacity-40" style={{
           background: 'linear-gradient(180deg, rgba(253,216,203,1) 0%, rgba(224,154,128,1) 50%, rgba(253,216,203,1) 100%)',
           top: `0`,
           left: `0`,
@@ -31,7 +31,7 @@ const NavBar = () => {
           </div>
           <div className="hidden md:block">
             <button className="bg-[#DC724A] text-black font-extrabold px-9 py-4 rounded-full hover:bg-[#d17c56] transition-colors duration-300">
-              Sign Up
+              Subscribe Now
             </button>
           </div>
           <div className="md:hidden">
@@ -94,7 +94,7 @@ const NavBar = () => {
           </div>
           <div className="py-6 px-5">
             <button className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#DC724A] hover:bg-[#d17c56]">
-              Sign Up
+              Subscribe Now
             </button>
           </div>
         </div>
