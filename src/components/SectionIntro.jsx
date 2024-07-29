@@ -13,9 +13,13 @@ const SectionIntro = () => {
                         Not the usual knowledge from the internet
                     </h2>
 
-                    <div className="refferal-section text-2xl font-bold">
-                        <p className="mb-8">Cognition is packed with tried and tested practical insights and theories on writing, freelancing, and content creation.</p>
-                        <Image src="/images/intro-readers.png" alt="hero image" width={206} height={54} />
+                    <div className="refferal-section">
+                        <p className="mb-8 text-2xl font-bold">Cognition is packed with tried and tested practical insights and theories on writing, freelancing, and content creation.</p>
+                        <div className="flex gap-4">
+                            <Image src="/images/intro-readers.png" alt="hero image" width={206} height={54} />
+                            <p className=" max-w-32">Join the fellow
+                                600+ readers</p>
+                        </div>
                     </div>
                 </div>
             </div>
