@@ -4,7 +4,7 @@ import React from 'react'
 const SectionIntro = () => {
     return (
         <div className="w-full py-12 z-10 absolute px-6 md:px-24" >
-            <div className="content flex justify-center items-center md:flex-row flex-col gap-40">
+            <div className="content flex justify-center items-center md:flex-row flex-col gap-4 md:gap-40">
                 <div className="image-section">
                     <Image src="/images/section-intro.png" alt="hero image" width={540} height={514} />
                 </div>
