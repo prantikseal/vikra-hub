@@ -11,6 +11,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-129': 'linear-gradient(129deg, rgba(254, 189, 162, 0.6) 0%, rgba(252, 212, 195, 0.6) 100%)',
       },
     },
   },

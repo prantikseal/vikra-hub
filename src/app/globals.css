@@ -10,8 +10,19 @@
             font-style: normal;
         }
         
+        @font-face {
+            font-family: 'Desyrel';
+            src: url('/desyrel/DESYREL_.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
         #harper-bold {
             font-family: 'Harper-Bold', sans-serif;
+        }
+        
+        .desyrel {
+            font-family: 'Desyrel', cursive;
         }
         
         .signup-button {
