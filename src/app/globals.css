@@ -1,62 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* import harper-bold from './assets/fonts/Harper-Bold.woff2'; */
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap");
 @font-face {
-  font-family: "Harper-Bold";
-  src: url("/harper/Harper-Bold Personal Use.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Harper-Bold";
+    src: url("/harper/Harper-Bold Personal Use.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Desyrel";
-  src: url("/desyrel/DESYREL_.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Desyrel";
+    src: url("/desyrel/DESYREL_.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 .font-oswald {
-  font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 #harper-bold {
-  font-family: "Harper-Bold", sans-serif;
+    font-family: "Harper-Bold", sans-serif;
 }
 
 .desyrel {
-  font-family: "Desyrel", cursive;
+    font-family: "Desyrel", cursive;
 }
 
 .signup-button {
-  background-color: #f4a261;
-  /* Button background color */
-  border: none;
-  /* Remove border */
-  border-radius: 20px;
-  /* Rounded corners */
-  color: white;
-  /* Text color */
-  padding: 10px 20px;
-  /* Padding */
-  text-align: center;
-  /* Center text */
-  text-decoration: none;
-  /* Remove underline */
-  display: inline-block;
-  /* Inline block */
-  font-size: 16px;
-  /* Font size */
-  font-family: Arial, sans-serif;
-  /* Font family */
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  /* Shadow */
-  cursor: pointer;
-  /* Pointer cursor on hover */
+    background-color: #f4a261;
+    /* Button background color */
+    border: none;
+    /* Remove border */
+    border-radius: 20px;
+    /* Rounded corners */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding */
+    text-align: center;
+    /* Center text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline block */
+    font-size: 16px;
+    /* Font size */
+    font-family: Arial, sans-serif;
+    /* Font family */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    /* Shadow */
+    cursor: pointer;
+    /* Pointer cursor on hover */
 }
 
 body {
-  background-color: #fffaf5;
+    background-color: #fffaf5;
 }

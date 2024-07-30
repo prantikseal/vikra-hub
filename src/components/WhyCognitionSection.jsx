@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const WhyCognitionSection = () => {
@@ -19,12 +20,12 @@ const WhyCognitionSection = () => {
         },
     ];
     return (
-        <div className="max-w-4xl mx-auto p-6">
+        <div className="max-w-6xl mx-auto p-6">
             <h1 className="text-xl text-gray-400 text-center mb-8">
                 Why Cognition? What&apos;s in it for you?
             </h1>
 
-            <h2 className="text-2xl md:text-6xl text-center mb-12" >
+            <h2 className="text-4xl md:text-6xl text-center mb-12" >
                 <span className="font-oswald font-extrabold">3</span> <span id="harper-bold">Pillars of Cognition</span>
             </h2>
 
@@ -40,6 +41,7 @@ const WhyCognitionSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
+                    <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" />
                     <h3 className="text-2xl font-bold mb-4">
                         Global Knowledge in your Inbox!
                     </h3>
@@ -53,6 +55,7 @@ const WhyCognitionSection = () => {
                     </p>
                 </div>
                 <div>
+                    <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" />
                     <h3 className="text-2xl font-bold mb-4">
                         Get your writing reviewed!
                     </h3>

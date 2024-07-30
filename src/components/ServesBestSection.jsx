@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const profiles = [
     { name: 'Freelancers', color: 'bg-pink-100' },
@@ -36,16 +37,20 @@ const ServesBestSection = () => {
     useEffect(() => {
         const updateVisibleCards = () => {
             const width = window.innerWidth;
-            if (width >= 1200) {setVisibleCards(5)
+            if (width >= 1200) {
+                setVisibleCards(5)
                 setAnimationDistance(350 * 5)
             }
-            else if (width >= 992) {setVisibleCards(4)
+            else if (width >= 992) {
+                setVisibleCards(4)
                 setAnimationDistance(400 * 4)
             }
-            else if (width >= 768) {setVisibleCards(5)
+            else if (width >= 768) {
+                setVisibleCards(5)
                 setAnimationDistance(500 * 5)
             }
-            else {setVisibleCards(3)
+            else {
+                setVisibleCards(3)
                 setAnimationDistance(550 * 3)
             };
         };
@@ -57,7 +62,6 @@ const ServesBestSection = () => {
     }, []);
 
     const duplicatedProfiles = [...profiles, ...profiles];
-    // const animationDistance = 350 * visibleCards;
 
     return (
         <div className="flex justify-center">
@@ -65,8 +69,13 @@ const ServesBestSection = () => {
                 <h2 className="text-3xl md:text-6xl text-center" id="harper-bold">
                     Cognition serves best for
                 </h2>
-                <div className="flex justify-center">
-                    <div className="carousel-div relative overflow-hidden px-0 mx-0 md:px-40 container max-w-7xl md:mx-40 ">
+                <div className="flex justify-center relative">
+                    <div className="carousel-div relative overflow-hidden px-0 mx-0 md:px-40 container max-w-7xl md:mx-40">
+                        {/* Left Gradient */}
+                        <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-[#fffaf5] to-transparent pointer-events-none z-10 hidden md:block"></div>
+                        {/* Right Gradient */}
+                        <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#fffaf5] to-transparent pointer-events-none z-10 hidden md:block"></div>
+
                         <motion.div
                             className="flex mt-12"
                             animate={{
@@ -88,7 +97,7 @@ const ServesBestSection = () => {
                                     style={{ width: '200px' }}
                                 >
                                     <div className="flex items-center space-x-2">
-                                        <img src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
+                                        <Image width={100} height={100} src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
                                         <span className="text-sm font-medium whitespace-nowrap">{profile.name}</span>
                                     </div>
                                 </div>
@@ -115,7 +124,7 @@ const ServesBestSection = () => {
                                     style={{ width: '200px' }}
                                 >
                                     <div className="flex items-center space-x-2">
-                                        <img src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
+                                        <Image height={100} width={100} src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
                                         <span className="text-sm font-medium whitespace-nowrap">{profile.name}</span>
                                     </div>
                                 </div>
