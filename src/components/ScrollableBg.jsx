@@ -49,8 +49,11 @@ const ScrollableBg = () => {
                 </div>
             </div>
             <motion.div
-                transition={{ duration: 0.5 }}
-            ref={imageRef} className="flex justify-center w-full h-screen">
+                transition={{ duration: 2, ease: 'easeInOut' }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+            ref={imageRef} className="flex justify-center w-full h-screen md:h-[1900px]">
                 <div className="flex justify-center container w-full">
                     <Image
                         width={1912}

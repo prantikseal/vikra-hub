@@ -23,9 +23,9 @@ const getRandomHeight = () => {
 
 const SubscriberTestimonials = () => {
     return (
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full my-8">
             <div className="p-8 container">
-                <h1 className="text-4xl md:text-6xl text-center mb-8" id="harper-bold">What my Subscribers have to say?</h1>
+                <h1 className="text-4xl md:text-6xl text-center mb-16" id="harper-bold">What my Subscribers have to say?</h1>
                 <div className=" md:grid-cols-2 lg:grid-cols-3 gap-6 [column-gap:1rem] [row-gap:1rem] [display:grid] [grid-template-columns:repeat(auto-fill,minmax(300px,1fr))]">
                     {testimonials.map((testimonial) => (
                         <div key={testimonial.id} className={`bg-gradient-129 rounded-lg p-6 shadow-md ${getRandomHeight()}`}>
