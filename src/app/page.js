@@ -1,5 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
+import NewsletterSubscriptionSection from "@/components/NewsletterSubscriptionSection";
+import PartnerWithMe from "@/components/PartnerWithMe";
 import ScrollableBg from "@/components/ScrollableBg";
 import SectionIntro from "@/components/SectionIntro";
 import ServesBestSection from "@/components/ServesBestSection";
@@ -22,6 +24,8 @@ export default function Home() {
       <TestimonialSection other={false} />
       <ScrollableBg />
       <SubscriberTestimonials />
+      <NewsletterSubscriptionSection />
+      <PartnerWithMe />
     </>
   );
 }
