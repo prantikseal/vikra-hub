@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProductCard = ({ title, subtitle, buttonText, color, children }) => (
-  <div className={`rounded-3xl p-6 bg-${color}-200 flex flex-col justify-between border-2 border-${color}-500`}>
+  <div className={`rounded-3xl p-6 bg-${color}-200 flex flex-col justify-between border-2 h-80 border-${color}-500`}>
     <div>
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
       <p className="text-sm mb-4">{subtitle}</p>
