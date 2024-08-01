@@ -1,7 +1,12 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { motion, useInView } from 'framer-motion';
 
 const WhyCognitionSection = () => {
+    const ref = React.useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.1 });
+
     const pillars = [
         {
             title: "For Content Creators",
@@ -19,28 +24,76 @@ const WhyCognitionSection = () => {
                 "Most writers just use proven formulas. The downside? If you do what everyone is doing, you get results similar to them. I will help you form your own theories and techniques.",
         },
     ];
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+                delayChildren: 0.3
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                type: "spring",
+                stiffness: 100
+            }
+        }
+    };
+
     return (
-        <div className="max-w-6xl mx-auto p-6">
-            <h1 className="text-xl text-gray-400 text-center mb-8">
+        <motion.div
+            className="max-w-6xl mx-auto p-6 overflow-hidden"
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={containerVariants}
+        >
+            <motion.h1
+                className="text-xl text-gray-400 text-center mb-8"
+                variants={itemVariants}
+            >
                 Why Cognition? What&apos;s in it for you?
-            </h1>
+            </motion.h1>
 
-            <h2 className="text-4xl md:text-6xl text-center mb-12" >
+            <motion.h2
+                className="text-4xl md:text-6xl text-center mb-12"
+                variants={itemVariants}
+            >
                 <span className="font-oswald font-extrabold">3</span> <span id="harper-bold">Pillars of Cognition</span>
-            </h2>
+            </motion.h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <motion.div
+                className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+                variants={containerVariants}
+            >
                 {pillars.map((pillar, index) => (
-                    <div key={index} className="bg-gradient-129 bg-opacity-40 p-6 rounded-lg relative">
-                        <div className="absolute top-4 left-4 w-12 h-12 bg-orange-400 rounded-lg"></div>
-                        <h3 className="text-xl font-semibold mb-4 mt-16">{pillar.title}</h3>
+                    <motion.div
+                        key={index}
+                        className="bg-gradient-129 bg-opacity-40 p-6 rounded-lg relative"
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <div className="w-12 h-12 bg-orange-400 rounded-lg"></div>
+                        <h3 className="text-xl font-semibold mb-4 mt-4">{pillar.title}</h3>
                         <p>{pillar.content}</p>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
+            <motion.div
+                className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                variants={containerVariants}
+            >
+                <motion.div variants={itemVariants}>
                     {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
                     <h3 className="text-2xl font-bold mb-4">
                         Global Knowledge in your Inbox!
@@ -53,8 +106,8 @@ const WhyCognitionSection = () => {
                         The content is subscriber-exclusive and is not published
                         elsewhere—not on socials, not on the web, only in your inbox.
                     </p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div variants={itemVariants}>
                     {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
                     <h3 className="text-2xl font-bold mb-4">
                         Get your writing reviewed!
@@ -67,9 +120,9 @@ const WhyCognitionSection = () => {
                         We will respond to you within 72 hours with a detailed ~300-word
                         review.
                     </p>
-                </div>
-            </div>
-        </div>
+                </motion.div>
+            </motion.div>
+        </motion.div>
     );
 };
 

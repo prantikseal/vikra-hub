@@ -30,7 +30,7 @@ export default function Home() {
       <NewsletterSubscriptionSection />
       <PartnerWithMe />
       <VikraWho />
-      <ProductShowcase />
+      {/* <ProductShowcase /> */}
       <Footer />
     </>
   );
