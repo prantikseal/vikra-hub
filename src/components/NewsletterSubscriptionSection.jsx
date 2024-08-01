@@ -82,7 +82,7 @@ const NewsletterSubscriptionSection = () => {
                         variants={itemVariants}
                     >
                         <p className="max-w-4xl text-lg font-semibold text-center mt-8 text-gray-500 px-4">
-                            The average word count of a Cognition's full-fledged issue is tightly packed ~1200 words. Imagine the depth
+                            The average word count of a Cognition&apos;s full-fledged issue is tightly packed ~1200 words. Imagine the depth
                         </p>
                     </motion.div>
 
