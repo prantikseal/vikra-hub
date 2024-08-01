@@ -108,7 +108,7 @@ const NewsletterSubscriptionSection = () => {
                                             height={200}
                                             src={member.image}
                                             alt={`Member ${member.id}`}
-                                            className="w-24 h-24 rounded-full object-cover border-2 border-[#e98255]"
+                                            className="max-w-24 max-h-24 rounded-full object-cover border-2 border-[#e98255]"
                                         />
                                     </motion.div>
                                 ))}
