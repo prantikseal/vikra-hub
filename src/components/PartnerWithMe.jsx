@@ -4,36 +4,41 @@ import React from 'react';
 
 const PartnerWithMe = () => {
     return (
-        <div className="flex justify-center py-10 px-4 sm:px-6 lg:px-8">
-            <div className="w-full max-w-6xl flex  justify-center gap-24 items-center   ">
-                <div className="flex flex-col lg:flex-row justify-between gap-8">
-                    <div className="flex-col items-center">
-                        <h2 className="text-6xl font-bold max-w-64" id="harper-bold">Partner With Me</h2>
-                        <p className="text-xl font-semibold text-gray-500 mt-8 max-w-md">
-                            Reach 700+ readers, mainly freelancers, content creators, and writers
-                        </p>
-                        <div className="mt-12">                       <Link href="/contact" className="rounded-full px-12 py-4 bg-gradient-129">
-                            Collaborate with me
-                        </Link>
-                        </div> 
+        <div className="flex justify-center">
+            <div className="container">
+                <div className="flex justify-between items-center py-10 px-3 md:px-64 flex-col lg:flex-row">
+                    <div className="flex flex-col lg:flex-row justify-between gap-8 scale-90 md:scale-110">
+                        <div className="flex items-center justify-start h-fit md:h-[600px]">
+                            <div className="flex-col">
+                                <h2 className="text-7xl font-bold max-w-96" id="harper-bold">Partner With Me</h2>
+                                <p className="text-xl font-semibold text-gray-500 mt-8 max-w-md">
+                                    Reach 700+ readers, mainly freelancers, content creators, and writers
+                                </p>
+                                <div className="mt-12">
+                                    <Link href="/contact" className="rounded-full px-12 py-4 bg-gradient-129 font-bold">
+                                        Collaborate with me
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="flex justify-center items-center w-full lg:w-auto">
-                        <div className="relative flex w-full sm:w-96 h-[500px] bg-gradient-129 rounded-2xl justify-center items-center p-4">
-                            <div className="scale-100 sm:scale-150 flex flex-col sm:flex-row gap-4">
+                        <div className="relative flex w-full sm:w-96 h-[600px] bg-gradient-129 rounded-2xl justify-center items-center p-4 scale-75 ">
+                            <div className="scale-150 flex gap-4">
                                 <div className="flex flex-1 flex-col gap-4 items-center">
-                                    <div className="relative w-full sm:w-44 h-28 bg-white rounded-lg flex justify-center items-center text-xl sm:text-2xl font-bold text-center shadow-md">
-                                        600+<br /> Total Subscribers
+                                    <div className="relative sm:w-44 py-8 justify-start text-left bg-white rounded-lg items-center text-xl sm:text-2xl font-bold px-8 md:px-2 shadow-md flex-col">
+                                        <span className="font-black font-faber-sans">600+</span><br /> <span className="text-sm">Total Subscribers</span>
                                     </div>
-                                    <div className="relative w-full sm:w-44 h-28 bg-white rounded-lg flex justify-center items-center text-xl sm:text-2xl font-bold text-center shadow-md">
-                                        600+<br /> Total Subscribers
+                                    <div className="relative sm:w-44 py-8 justify-start text-left bg-white rounded-lg items-center text-xl sm:text-2xl font-bold px-8 md:px-2 shadow-md flex-col">
+                                        <span className="font-black font-faber-sans">600+</span><br /> <span className="text-sm">Total Subscribers</span>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-4 items-center">
-                                    <div className="relative w-full sm:w-44 h-28 bg-white rounded-lg flex justify-center items-center text-xl sm:text-2xl font-bold text-center shadow-md">
-                                        600+<br /> Total Subscribers
+                                    <div className="relative sm:w-44 py-8 justify-start text-left bg-white rounded-lg items-center text-xl sm:text-2xl font-bold px-8 md:px-2 shadow-md flex-col">
+                                        <span className="font-black font-faber-sans">600+</span><br /> <span className="text-sm">Total Subscribers</span>
                                     </div>
-                                    <div className="relative w-full sm:w-44 h-28 bg-white rounded-lg flex justify-center items-center text-xl sm:text-2xl font-bold text-center shadow-md">
-                                        600+<br /> Total Subscribers
+                                    <div className="relative sm:w-44 py-8 justify-start text-left bg-white rounded-lg items-center text-xl sm:text-2xl font-bold px-8 md:px-2 shadow-md flex-col">
+                                        <span className="font-black font-faber-sans">600+</span><br /> <span className="text-sm">Total Subscribers</span>
                                     </div>
                                 </div>
                             </div>

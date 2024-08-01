@@ -41,7 +41,7 @@ const WhyCognitionSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" />
+                    {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
                     <h3 className="text-2xl font-bold mb-4">
                         Global Knowledge in your Inbox!
                     </h3>
@@ -55,7 +55,7 @@ const WhyCognitionSection = () => {
                     </p>
                 </div>
                 <div>
-                    <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" />
+                    {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
                     <h3 className="text-2xl font-bold mb-4">
                         Get your writing reviewed!
                     </h3>

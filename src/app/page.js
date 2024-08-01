@@ -1,12 +1,15 @@
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
 import NewsletterSubscriptionSection from "@/components/NewsletterSubscriptionSection";
 import PartnerWithMe from "@/components/PartnerWithMe";
+import ProductShowcase from "@/components/ProductShowcase";
 import ScrollableBg from "@/components/ScrollableBg";
 import SectionIntro from "@/components/SectionIntro";
 import ServesBestSection from "@/components/ServesBestSection";
 import SubscriberTestimonials from "@/components/SubscriberTestimonials";
 import TestimonialSection from "@/components/TestimonialSection";
+import VikraWho from "@/components/VikraWho";
 import WhyCognitionSection from "@/components/WhyCognitionSection";
 
 
@@ -26,6 +29,9 @@ export default function Home() {
       <SubscriberTestimonials />
       <NewsletterSubscriptionSection />
       <PartnerWithMe />
+      <VikraWho />
+      <ProductShowcase />
+      <Footer />
     </>
   );
 }

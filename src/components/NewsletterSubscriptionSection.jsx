@@ -14,7 +14,7 @@ const NewsletterSubscriptionSection = () => {
         <div className="  my-8">
             <div className="flex justify-center w-full">
                 <div className="container max-w-5xl overflow-hidden">
-                    <h2 className=" text-center text-3xl md:text-6xl" id="harper-bold">
+                    <h2 className=" text-center text-2xl md:text-6xl" id="harper-bold">
                         Join the unusual Club of <span className="font-oswald font-black text-[#e98255]">700+</span>
                         <br />
                         <span className="relative">
@@ -34,7 +34,7 @@ const NewsletterSubscriptionSection = () => {
                         </p>
                     </div>
 
-                    <div className="image-section scale-90 md:scale-90 flex-col justify-center mt-8">
+                    <div className="image-section scale-90 flex-col justify-center mt-8">
                         <div className="flex justify-center w-full gap-12 mb-8">
                             {members.map((member) => (
                                 <Image
