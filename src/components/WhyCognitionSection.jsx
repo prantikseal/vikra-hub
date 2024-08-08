@@ -50,7 +50,7 @@ const WhyCognitionSection = () => {
 
     return (
         <motion.div
-            className="max-w-6xl mx-auto p-6 overflow-hidden"
+            className="max-w-6xl mx-auto p-6 overflow-hidden mt-24"
             ref={ref}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
@@ -90,7 +90,7 @@ const WhyCognitionSection = () => {
             </motion.div>
 
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                className="grid grid-cols-1 md:grid-cols-2 gap-24"
                 variants={containerVariants}
             >
                 <motion.div variants={itemVariants}>

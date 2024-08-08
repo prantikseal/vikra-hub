@@ -5,16 +5,40 @@ import Masonry from 'react-masonry-css';
 
 const testimonials = [
     {
-        id: 1, name: 'John Doe', text: 'This product has completely transformed my workflow. I can\'t imagine going back to my old methods now.'
+        id: 1,
+        name: 'Kushagra Oberoi',
+        role: 'Copywriter, Runs 1-2-3 Copywriting Newsletter',
+        text: `As a freelance copywriter who also runs a newsletter, I look forward to Vikra's practical approach. 
+        Nothing screams authenticity like Cognition because it is based on so many relatable real-life events. 
+        Think of it as a reality TV except it is a newsletter about Vikra's life and it happens to be WAYY more interesting than ours. 
+        Don't be jealous. SUBSCRIBE and learn!`
     },
     {
-        id: 2, name: 'Jane Smith', text: 'I was skeptical at first, but after trying it out, I\'m thoroughly impressed. The attention to detail is remarkable.'
+        id: 2,
+        name: 'Ayushi Bansal',
+        role: 'Content Creator',
+        text: `I have subscribed to over 30+ newsletters and it feels overwhelming to read all of them. 
+        But whenever I see any edition of Cognition, I know I have to give it a read. 
+        It is always so insightful and unfiltered that reading it feels like having a conversation with Vikra. 
+        The newsletter is no less than a piece of art, crafted with so much love and passion. 
+        I'd highly recommend you subscribe to it to learn everything about freelancing, newsletter growth, movies, books and a lot more!`
     },
     {
-        id: 3, name: 'Mike Johnson', text: 'As a long-time user, I\'ve seen this product evolve and improve. It just keeps getting better with each update.'
+        id: 3,
+        name: 'Aanchal',
+        role: 'Freelance Thumbnail Designer',
+        text: `Cognition is one of the few newsletters I cannot miss! 
+        Even though I am a designer by profession, Vikra’s writing style is soooooo good it hooks you till the end, 
+        and of course, the way he explains by adding those personal experiences and learnings is absolutely amazing! 
+        No clutter, just pure knowledge that too with fun!!!`
     },
     {
-        id: 4, name: 'Emily Brown', text: 'The customer support team is fantastic. They went above and beyond to help me resolve an issue quickly.'
+        id: 4,
+        name: 'Urvashi Gormat',
+        role: 'Content Creator',
+        text: `Cognition is one of those few newsletters I read. One of the biggest reasons is because it's a no bu**shit newsletter. 
+        I like how Vikra shares his experiences and learnings without random fluff. 
+        Anyone who is starting their freelancing journey or already working as a freelancer should absolutely subscribe to Cognition for some real learnings!`
     },
     {
         id: 5, name: 'Chris Lee', text: 'As someone who\'s tried many similar products, I can confidently say this is the best in its class. The attention to user experience sets it apart from the competition.As someone who\'s tried many similar products, I can confidently say this is the best in its class. The attention to user experience sets it apart from the competition.As someone who\'s tried many similar products, I can confidently say this is the best in its class. The attention to user experience sets it apart from the competition.As someone who\'s tried many similar products, I can confidently say this is the best in its class. The attention to user experience sets it apart from the competition.As someone who\'s tried many similar products, I can confidently say this is the best in its class. The attention to user experience sets it apart from the competition.'
@@ -46,7 +70,7 @@ const SubscriberTestimonials = () => {
     return (
         <div className="flex justify-center w-full my-8">
             <div className="p-8 container px-8 md:px-44 ">
-                <h1 className="text-4xl md:text-6xl text-center mb-16" id="harper-bold">What my Subscribers have to say?</h1>
+                <h1 className="text-4xl md:text-6xl text-center mb-16" id="harper-bold">What your favourite creators have to say</h1>
                 <Masonry
                     breakpointCols={breakpointColumnsObj}
                     className="flex w-auto -ml-4"
@@ -55,7 +79,7 @@ const SubscriberTestimonials = () => {
                     {testimonials.map((testimonial) => (
                         <div
                             key={testimonial.id}
-                            className="bg-gradient-129 rounded-lg p-6 shadow-md mb-4"
+                            className="bg-gradient-129 rounded-3xl p-6 mb-4"
                         >
                             <div className="flex items-center mb-4">
                                 <Image width={40} height={40} src="/images/profile.png" alt="Avatar" className="w-10 h-10 rounded-full mr-4" />

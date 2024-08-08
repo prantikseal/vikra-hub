@@ -3,31 +3,50 @@ import React, { useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 
+
+// const profiles = [
+//     { name: 'Freelancers', color: 'bg-pink-100' },
+//     { name: 'Agency Owners', color: 'bg-yellow-100' },
+//     { name: 'Designers', color: 'bg-pink-100' },
+//     { name: 'Copywriters', color: 'bg-gray-100' },
+//     { name: 'Copywriters', color: 'bg-pink-100' },
+//     { name: 'Copywriters', color: 'bg-yellow-100' },
+//     { name: 'Content writers', color: 'bg-gray-100' },
+//     { name: 'Biz Owners', color: 'bg-pink-100' },
+//     { name: 'Freelancers', color: 'bg-pink-100' },
+//     { name: 'Agency Owners', color: 'bg-yellow-100' },
+//     { name: 'Designers', color: 'bg-pink-100' },
+//     { name: 'Copywriters', color: 'bg-gray-100' },
+//     { name: 'Copywriters', color: 'bg-pink-100' },
+//     { name: 'Copywriters', color: 'bg-yellow-100' },
+//     { name: 'Content writers', color: 'bg-gray-100' },
+//     { name: 'Biz Owners', color: 'bg-pink-100' },
+//     { name: 'Freelancers', color: 'bg-pink-100' },
+//     { name: 'Agency Owners', color: 'bg-yellow-100' },
+//     { name: 'Designers', color: 'bg-pink-100' },
+//     { name: 'Copywriters', color: 'bg-gray-100' },
+//     { name: 'Copywriters', color: 'bg-pink-100' },
+//     { name: 'Copywriters', color: 'bg-yellow-100' },
+//     { name: 'Content writers', color: 'bg-gray-100' },
+//     { name: 'Biz Owners', color: 'bg-pink-100' },
+// ];
+
+// Freelancers
+// Content Creators
+// Content Writers
+// Copywriters
+// Service Business Owners
+// D2C Marketing Heads
+// Content Marketers
+
 const profiles = [
     { name: 'Freelancers', color: 'bg-pink-100' },
-    { name: 'Agency Owners', color: 'bg-yellow-100' },
-    { name: 'Designers', color: 'bg-pink-100' },
+    { name: 'Content Creators', color: 'bg-yellow-100' },
+    { name: 'Content Writers', color: 'bg-pink-100' },
     { name: 'Copywriters', color: 'bg-gray-100' },
-    { name: 'Copywriters', color: 'bg-pink-100' },
-    { name: 'Copywriters', color: 'bg-yellow-100' },
-    { name: 'Content writers', color: 'bg-gray-100' },
-    { name: 'Biz Owners', color: 'bg-pink-100' },
-    { name: 'Freelancers', color: 'bg-pink-100' },
-    { name: 'Agency Owners', color: 'bg-yellow-100' },
-    { name: 'Designers', color: 'bg-pink-100' },
-    { name: 'Copywriters', color: 'bg-gray-100' },
-    { name: 'Copywriters', color: 'bg-pink-100' },
-    { name: 'Copywriters', color: 'bg-yellow-100' },
-    { name: 'Content writers', color: 'bg-gray-100' },
-    { name: 'Biz Owners', color: 'bg-pink-100' },
-    { name: 'Freelancers', color: 'bg-pink-100' },
-    { name: 'Agency Owners', color: 'bg-yellow-100' },
-    { name: 'Designers', color: 'bg-pink-100' },
-    { name: 'Copywriters', color: 'bg-gray-100' },
-    { name: 'Copywriters', color: 'bg-pink-100' },
-    { name: 'Copywriters', color: 'bg-yellow-100' },
-    { name: 'Content writers', color: 'bg-gray-100' },
-    { name: 'Biz Owners', color: 'bg-pink-100' },
+    { name: 'Service Business Owners', color: 'bg-pink-100' },
+    { name: 'D2C Marketing Heads', color: 'bg-yellow-100' },
+    { name: 'Content Marketers', color: 'bg-gray-100' },
 ];
 
 const ServesBestSection = () => {
@@ -108,7 +127,7 @@ const ServesBestSection = () => {
                     className="flex justify-center relative"
                     variants={itemVariants}
                 >
-                    <div className="carousel-div relative overflow-hidden px-0 mx-0 md:px-40 container max-w-7xl md:mx-40">
+                    <div className="carousel-div relative overflow-hidden px-0 mx-0 md:px-40 container max-w-7xl md:mx-40 h-52">
                         {/* Left Gradient */}
                         <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-[#fffaf5] to-transparent pointer-events-none z-10 hidden md:block"></div>
                         {/* Right Gradient */}
@@ -131,14 +150,11 @@ const ServesBestSection = () => {
                             {duplicatedProfiles.map((profile, index) => (
                                 <motion.div
                                     key={index}
-                                    className={`flex-shrink-0 ${profile.color} rounded-full px-4 py-2 mx-2 border border-black`}
-                                    style={{ width: '200px' }}
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
+                                    className={`flex-shrink-0 ${profile.color} rounded-full px-4 py-2 mx-6 border border-black w-max scale-110`}
                                 >
                                     <div className="flex items-center space-x-2">
                                         <Image width={100} height={100} src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
-                                        <span className="text-sm font-medium whitespace-nowrap">{profile.name}</span>
+                                        <span className="text-md font-medium whitespace-nowrap">{profile.name}</span>
                                     </div>
                                 </motion.div>
                             ))}
@@ -160,14 +176,11 @@ const ServesBestSection = () => {
                             {duplicatedProfiles.map((profile, index) => (
                                 <motion.div
                                     key={index}
-                                    className={`flex-shrink-0 ${profile.color} rounded-full px-4 py-2 mx-2 border border-black`}
-                                    style={{ width: '200px' }}
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
+                                    className={`flex-shrink-0 ${profile.color} rounded-full px-4 py-2 mx-6 border border-black w-max scale-110`}
                                 >
                                     <div className="flex items-center space-x-2">
                                         <Image height={100} width={100} src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
-                                        <span className="text-sm font-medium whitespace-nowrap">{profile.name}</span>
+                                        <span className="text-md font-medium whitespace-nowrap">{profile.name}</span>
                                     </div>
                                 </motion.div>
                             ))}

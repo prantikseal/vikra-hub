@@ -10,7 +10,7 @@ const SectionIntro = () => {
     return (
         <motion.div
             ref={ref}
-            className="w-full py-12 z-10 absolute px-6 md:px-24"
+            className="w-full pt-24 py-12 z-10 absolute px-6 md:px-24"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.5 }}
@@ -25,7 +25,7 @@ const SectionIntro = () => {
                     <Image src="/images/section-intro.png" alt="hero image" width={540} height={514} />
                 </motion.div>
                 <motion.div
-                    className="details-section flex-col max-w-md"
+                    className="details-section flex-col max-w-xl"
                     initial={{ x: 100, opacity: 0 }}
                     animate={isInView ? { x: 0, opacity: 1 } : { x: 100, opacity: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
@@ -37,7 +37,7 @@ const SectionIntro = () => {
                         animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                     >
-                        Not the usual knowledge from the internet
+                        Improve your content techniques with detailed, in-depth case studies
                     </motion.h2>
 
                     <div className="refferal-section">
@@ -47,7 +47,11 @@ const SectionIntro = () => {
                             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
                         >
-                            Cognition is packed with tried and tested practical insights and theories on writing, freelancing, and content creation.
+                            I rewrite copies of popular brands better than the original, share my client case studies, and make top content minds send you subscriber-only guest emails
+
+                            <br />
+                            <br />
+                            …to make you a better content marketer
                         </motion.p>
                         <motion.div
                             className="flex gap-4"

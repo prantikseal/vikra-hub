@@ -15,7 +15,7 @@ const PartnerWithMe = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="container">
+            <div className="container overflow-hidden">
                 <div className="flex justify-between items-center py-10 px-3 md:px-64 flex-col lg:flex-row">
                     <motion.div
                         className="flex flex-col lg:flex-row justify-between gap-8 scale-90 md:scale-110"
@@ -26,7 +26,7 @@ const PartnerWithMe = () => {
                         <div className="flex items-center justify-start h-fit md:h-[600px]">
                             <div className="flex-col">
                                 <motion.h2
-                                    className="text-7xl font-bold max-w-96"
+                                    className="text-5xl md:text-7xl font-bold max-w-96"
                                     id="harper-bold"
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
@@ -35,7 +35,7 @@ const PartnerWithMe = () => {
                                     Partner With Me
                                 </motion.h2>
                                 <motion.p
-                                    className="text-xl font-semibold text-gray-500 mt-8 max-w-md"
+                                    className="text-lg md:text-xl font-semibold text-gray-500 mt-8 max-w-md"
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
@@ -56,7 +56,7 @@ const PartnerWithMe = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        className="flex justify-center items-center w-full lg:w-auto"
+                        className="flex justify-center items-center w-full lg:w-auto "
                         initial={{ x: 100, opacity: 0 }}
                         animate={isInView ? { x: 0, opacity: 1 } : { x: 100, opacity: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
@@ -67,7 +67,7 @@ const PartnerWithMe = () => {
                             animate={isInView ? { scale: 0.75, opacity: 1 } : { scale: 0.5, opacity: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
                         >
-                            <div className="scale-150 flex gap-4">
+                            <div className="scale-[1.3] flex gap-4">
                                 <div className="flex flex-1 flex-col gap-4 items-center">
                                     {[0, 1].map((index) => (
                                         <motion.div

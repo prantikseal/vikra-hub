@@ -20,14 +20,17 @@ const VikraWho = () => {
                 >
                     <div className="flex items-center justify-start h-fit md:h-[600px]">
                         <div className="flex-col">
-                            <h2 className="text-7xl font-bold" id="harper-bold">Vikra Who ?</h2>
-                            <p className="text-xl font-semibold text-gray-500 mt-8 max-w-md">
-                                Lorem ipsum dolor sit amet consectetur. Laoreet integer quis sed cursus justo. Leo lectus dignissim aliquet porttitor eget lectus.
+                            <h2 className="text-5xl md:text-7xl font-bold" id="harper-bold">Vikra Who ?</h2>
+                            <p className="text-lg font-semibold text-[#363434] mt-8 max-w-md">
+                                I am a freelance newsletter strategist/writer and an email copywriter for D2C brands.
                                 <br /> <br />
-                                Vitae ut praesent enim rhoncus sed elit aliquam in. Magna tortor bibendum id diam risus. Rhoncus malesuada a lorem pretium. Et posuere ac mattis ac et egestas. Imperdiet in ut sapien urna.
+                                I have worked with 35+ brands, crafting blogs, social media content, video scripts, etc. In January 2023, I niched down to newsletters and helped 10+ publications grow from scratch.
+<br /> <br />
+                                I run two newsletters, create content on LinkedIn and Twitter, publish ebooks, and host exclusive cohorts for no more than 10 writers/creators.
+
                             </p>
                             <div className="mt-12">
-                                <Link href="/contact" className="rounded-full px-12 py-4 bg-gradient-129 font-bold">
+                                <Link href="/" className="rounded-full px-12 py-4 bg-gradient-129 font-bold">
                                     Know more about me
                                 </Link>
                             </div>
