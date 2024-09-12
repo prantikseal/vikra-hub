@@ -7,7 +7,7 @@ const ScrollableBg = () => {
     const [isSticky, setIsSticky] = useState(false);
     const stickyRef = useRef(null);
     const imageRef = useRef(null);
-    
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,7 +17,7 @@ const ScrollableBg = () => {
                 setIsSticky(true);
             }
         };
-        
+
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -30,16 +30,15 @@ const ScrollableBg = () => {
                 ref={stickyRef}
                 className={`${isSticky ? 'sticky top-0' : ''} z-10`}
             >
-                <div className={`flex items-center justify-center max-w-4xl md:max-w-6xl mx-auto ${
-                    isSticky ? ' p-4 md:p-16' : 'pt-0'
+                <div className={`flex items-center justify-center max-w-4xl md:max-w-6xl mx-auto ${isSticky ? ' p-4 md:p-16' : 'pt-0'
                     }`}>
                     <div className="p-4 rounded mx-6">
                         <p className="text-center text-3xl md:text-6xl font-bold" id="harper-bold">
-                            Streaming Netflix, Hanging out with friends, and Cognition emails…What’s common in the three?
+                            Reading Cognition is as engaging as streaming Netflix or hanging out with friends -
                             <br /><br /><br />
 
 
-                            You look forward to them
+                            except you’ll also learn content marketing while having insane fun!
                         </p>
                     </div>
                 </div>
@@ -49,7 +48,7 @@ const ScrollableBg = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-            ref={imageRef} className="flex justify-center w-full h-screen md:h-[1900px]">
+                ref={imageRef} className="flex justify-center w-full h-screen md:h-[1900px]">
                 <div className="flex justify-center container w-full">
                     <Image
                         width={1912}

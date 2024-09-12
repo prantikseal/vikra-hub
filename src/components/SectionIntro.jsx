@@ -37,7 +37,7 @@ const SectionIntro = () => {
                         animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                     >
-                        Improve your content techniques with detailed, in-depth case studies
+                        Most marketing newsletters repeat the same popular strategies. We don’t do that.
                     </motion.h2>
 
                     <div className="refferal-section">

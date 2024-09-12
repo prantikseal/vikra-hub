@@ -7,6 +7,13 @@ const PartnerWithMe = () => {
     const ref = React.useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.3 });
 
+    const partnerStats = [
+        { label: "Total Subscribers", value: "600+" },
+        { label: "30-Day Open Rate", value: "45%" },
+        { label: "30-Day CTR", value: "15%" },
+        { label: "Frequency", value: "Weekly" }
+    ];
+
     return (
         <motion.div
             ref={ref}
@@ -40,7 +47,7 @@ const PartnerWithMe = () => {
                                     animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
                                 >
-                                    Reach 700+ readers, mainly freelancers, content creators, and writers
+                                    Show your work to 600+ active readers in content marketing; majorly branching into writers, freelancers, content creators
                                 </motion.p>
                                 <motion.div
                                     className="mt-12"
@@ -69,7 +76,7 @@ const PartnerWithMe = () => {
                         >
                             <div className="scale-[1.3] flex gap-4">
                                 <div className="flex flex-1 flex-col gap-4 items-center">
-                                    {[0, 1].map((index) => (
+                                    {partnerStats.slice(0, 2).map((stat, index) => (
                                         <motion.div
                                             key={index}
                                             className="relative sm:w-44 py-8 justify-start text-left bg-white rounded-lg items-center text-xl sm:text-2xl font-bold px-8 md:px-2 shadow-md flex-col"
@@ -77,12 +84,13 @@ const PartnerWithMe = () => {
                                             animate={isInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
                                             transition={{ duration: 0.5, delay: 0.6 + index * 0.2 }}
                                         >
-                                            <span className="font-black font-faber-sans">600+</span><br /> <span className="text-sm">Total Subscribers</span>
+                                            <span className="font-black font-faber-sans">{stat.value}</span><br />
+                                            <span className="text-sm">{stat.label}</span>
                                         </motion.div>
                                     ))}
                                 </div>
                                 <div className="flex flex-col gap-4 items-center">
-                                    {[0, 1].map((index) => (
+                                    {partnerStats.slice(2).map((stat, index) => (
                                         <motion.div
                                             key={index}
                                             className="relative sm:w-44 py-8 justify-start text-left bg-white rounded-lg items-center text-xl sm:text-2xl font-bold px-8 md:px-2 shadow-md flex-col"
@@ -90,7 +98,8 @@ const PartnerWithMe = () => {
                                             animate={isInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }}
                                             transition={{ duration: 0.5, delay: 1 + index * 0.2 }}
                                         >
-                                            <span className="font-black font-faber-sans">600+</span><br /> <span className="text-sm">Total Subscribers</span>
+                                            <span className="font-black font-faber-sans">{stat.value}</span><br />
+                                            <span className="text-sm">{stat.label}</span>
                                         </motion.div>
                                     ))}
                                 </div>

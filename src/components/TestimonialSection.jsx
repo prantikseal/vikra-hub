@@ -11,7 +11,7 @@ const TestimonialSection = ({
         <div className="box flex-col justify-center bg-gradient-129 rounded-2xl py-12 px-4">
             <div className="flex justify-center">
                   <p className="desyrel text-center max-w-xl text-xl md:text-2xl md:max-w-4xl">
-                      “ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ullam doloribus voluptatum nesciunt mollitia dolorem laboriosam neque cum, dolores odio aliquid excepturi facilis cumque illum sequi soluta quia minus vitae! ”
+                      “ All issues you read are based on experiments and real work for clients - I either share case studies, documentation, or challenge the best copy around the globe.”
                   </p>
             </div>
               <div className="profile flex justify-center items-center gap-4 mt-12">

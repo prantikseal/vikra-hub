@@ -11,17 +11,17 @@ const WhyCognitionSection = () => {
         {
             title: "For Content Creators",
             content:
-                "Content is a curriculum. You study the content, reverse engineer what worked, and double down based on data. Our readers learn exactly that!",
+                "Everyone creates. Only the real ones make money from content. We share the curriculum on turning content into a business.",
         },
         {
             title: "For Freelancers",
             content:
-                "In three years, I have developed systems and SOPs to help me not repeat my mistakes. I share them so you don't commit these mistakes in the first place.",
+                "Service is only 10% of running a service-based business. I share the other 90% - systems, SOPs, mistakes, hiring, lead generation, etc.",
         },
         {
             title: "For Writers",
             content:
-                "Most writers just use proven formulas. The downside? If you do what everyone is doing, you get results similar to them. I will help you form your own theories and techniques.",
+                "Most writers just use famous formulas. The downside? You follow the same rules, you write the same copy. But here, you will learn to break and form rules at will.",
         },
     ];
 
@@ -112,14 +112,17 @@ const WhyCognitionSection = () => {
                     <h3 className="text-2xl font-bold mb-4">
                         Get your writing reviewed!
                     </h3>
-                    <p className="mb-4">
-                        Subscribe to Cognition and reply to the welcome email with your
-                        write-up.
-                    </p>
-                    <p>
-                        We will respond to you within 72 hours with a detailed ~300-word
-                        review.
-                    </p>
+                        <p className="">
+                            Subscribe
+                        </p>
+                        <p className="pl-8">↓</p>
+                        <p>
+                            Reply to the welcome email with your writeup
+                        </p>
+                        <p className="pl-8">↓</p>
+                        <p>
+                            Get a detailed ~300-word review within 72 hours
+                        </p>
                 </motion.div>
             </motion.div>
         </motion.div>
