@@ -22,12 +22,12 @@ const NavBar = () => {
         </div>
         <div className="container mx-auto flex justify-between items-center">
           <Logo className="relative flex items-center justify-start scale-125" />
-          <div className="hidden md:flex space-x-14">
+          <div className="hidden md:flex space-x-14 pl-24">
             <NavLink className=" font-extrabold" href="#home">Home</NavLink>
-            <NavLink className=" font-extrabold" href="#weekly-cafe">Vikra’s Cafe</NavLink>
-            <NavLink className=" font-extrabold" href="#cognition">Cognition</NavLink>
-            <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
-            <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink>
+            <NavLink className=" font-extrabold" href="#weekly-cafe">Community</NavLink>
+            <NavLink className=" font-extrabold" href="#cognition">Advertise</NavLink>
+            {/* <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
+            <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink> */}
           </div>
           <div className="hidden md:block">
             <button className="bg-[#DC724A] text-black font-extrabold px-9 py-4 rounded-full hover:bg-[#d17c56] transition-colors duration-300">
@@ -85,7 +85,7 @@ const NavBar = () => {
             <div className="mt-6">
               <nav className="grid gap-y-8">
                 <NavLink className=" font-extrabold" href="#home">Home</NavLink>
-                <NavLink className=" font-extrabold" href="#vikras-cafe">Vikra’s Cafe</NavLink>
+                <NavLink className=" font-extrabold" href="#vikras-cafe">Newsletter</NavLink>
                 <NavLink className=" font-extrabold" href="#cognition">Cognition</NavLink>
                 <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
                 <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink>

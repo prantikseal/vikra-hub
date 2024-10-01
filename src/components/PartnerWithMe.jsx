@@ -23,7 +23,7 @@ const PartnerWithMe = () => {
             transition={{ duration: 0.5 }}
         >
             <div className="container overflow-hidden">
-                <div className="flex justify-between items-center py-10 px-3 md:px-64 flex-col lg:flex-row">
+                <div className="flex justify-between items-center py-10 px-3 md:px-24 lg:px-36 flex-col lg:flex-row">
                     <motion.div
                         className="flex flex-col lg:flex-row justify-between gap-8 scale-90 md:scale-110"
                         initial={{ x: -100, opacity: 0 }}

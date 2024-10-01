@@ -2,6 +2,9 @@ import Image from "next/image"
 
 
 const TestimonialSection = ({
+  testimonial = "",
+  personName= "", 
+  personImage ="",
   other
 }) => {
   return (

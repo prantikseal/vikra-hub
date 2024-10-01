@@ -2,19 +2,92 @@
 import Image from 'next/image';
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useEffect } from 'react';
 
 const NewsletterSubscriptionSection = () => {
     const ref = React.useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.1 });
 
+    const testimonials = [
+        {
+            id: 1,
+            name: 'Kushagra Oberoi',
+            role: 'Copywriter, Runs 1-2-3 Copywriting Newsletter',
+            profileImage: '/images/profile/kushagra.png'
+        },
+        {
+            id: 2,
+            name: 'Aanchal',
+            role: 'Freelance Thumbnail Designer',
+            profileImage: '/images/profile/aanchal.png'
+        },
+        {
+            id: 3,
+            name: 'Urvashi Gormat',
+            role: 'Content Creator',
+            profileImage: "/images/profile/urvashi-gormat.png"
+        },
+        {
+            id: 4,
+            name: 'Ayushi Bansal',
+            role: 'Content Creator',
+            profileImage: '/images/profile/aayushi-bansal.png'
+        },
+        {
+            id: 5,
+            name: 'Vaishali Venkatraman',
+            role: 'LinkedIn Coach',
+            profileImage: '/images/profile/vaishali-venkatraman.png'
+        },
+        {
+            id: 6,
+            name: 'Riten Debnath',
+            role: 'Founder and CEO, Fueler',
+            profileImage: '/images/profile/riten-debnath.png'
+        },
+        {
+            id: 7,
+            name: 'Anangsha Alammyan',
+            role: 'Top Medium Writer, 174k+ readers',
+            profileImage: '/images/profile/Anangsha.png'
+        },
+        {
+            id: 8,
+            name: 'Abhilash KB',
+            role: 'Technical Content Writer',
+            profileImage: '/images/profile/Abhilash.png'
+        }
+    ];
+
+    // Function to shuffle the testimonial array
+    const shuffleArray = (array) => {
+        return array.sort(() => Math.random() - 0.5);
+    };
+
+    // Shuffle testimonials and extract profileImage
+    const shuffledTestimonials = shuffleArray(testimonials);
+
     const members = Array(8).fill().map((_, i) => ({
         id: i,
-        image: `/images/profile.png`
+        image: shuffledTestimonials[i % shuffledTestimonials.length].profileImage
     }));
+
     const members1 = Array(7).fill().map((_, i) => ({
         id: i,
-        image: `/images/profile.png`
+        image: shuffledTestimonials[i % shuffledTestimonials.length].profileImage
     }));
+
+    useEffect(() => {
+        // random images changes upon every 3 seconds when in view
+        const interval = setInterval(() => {
+            members.forEach((member, index) => {
+                member.image = shuffledTestimonials[index % shuffledTestimonials.length].profileImage;
+            });
+            members1.forEach((member, index) => {
+                member.image = shuffledTestimonials[index % shuffledTestimonials.length].profileImage;
+            });
+        }, 1000);
+    }, [members, members1, shuffledTestimonials]);
 
     const containerVariants = {
         hidden: { opacity: 0 },

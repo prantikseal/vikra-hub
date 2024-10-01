@@ -9,16 +9,19 @@ const WhyCognitionSection = () => {
 
     const pillars = [
         {
+            emoji: "🧠",
             title: "For Content Creators",
             content:
                 "Everyone creates. Only the real ones make money from content. We share the curriculum on turning content into a business.",
         },
         {
+            emoji: "👩‍💻",
             title: "For Freelancers",
             content:
                 "Service is only 10% of running a service-based business. I share the other 90% - systems, SOPs, mistakes, hiring, lead generation, etc.",
         },
         {
+            emoji: "📝",
             title: "For Writers",
             content:
                 "Most writers just use famous formulas. The downside? You follow the same rules, you write the same copy. But here, you will learn to break and form rules at will.",
@@ -82,7 +85,11 @@ const WhyCognitionSection = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <div className="w-12 h-12 bg-orange-400 rounded-lg"></div>
+                        <div className="w-12 h-12 bg-orange-400 rounded-lg relative">
+                            <span className="text-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                {pillar.emoji}
+                            </span>
+                        </div>
                         <h3 className="text-xl font-semibold mb-4 mt-4">{pillar.title}</h3>
                         <p>{pillar.content}</p>
                     </motion.div>
@@ -90,12 +97,13 @@ const WhyCognitionSection = () => {
             </motion.div>
 
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 gap-24"
+                // className="grid grid-cols-1 md:grid-cols-2 gap-24"
+                className="text-center"
                 variants={containerVariants}
             >
-                <motion.div variants={itemVariants}>
-                    {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
-                    <h3 className="text-2xl font-bold mb-4">
+                {/* <motion.div variants={itemVariants}> */}
+                {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
+                {/* <h3 className="text-2xl font-bold mb-4">
                         Global Knowledge in your Inbox!
                     </h3>
                     <p className="mb-4">
@@ -106,23 +114,23 @@ const WhyCognitionSection = () => {
                         The content is subscriber-exclusive and is not published
                         elsewhere—not on socials, not on the web, only in your inbox.
                     </p>
-                </motion.div>
+                </motion.div> */}
                 <motion.div variants={itemVariants}>
                     {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
                     <h3 className="text-2xl font-bold mb-4">
                         Get your writing reviewed!
                     </h3>
-                        <p className="">
-                            Subscribe
-                        </p>
-                        <p className="pl-8">↓</p>
-                        <p>
-                            Reply to the welcome email with your writeup
-                        </p>
-                        <p className="pl-8">↓</p>
-                        <p>
-                            Get a detailed ~300-word review within 72 hours
-                        </p>
+                    <p className="">
+                        Subscribe
+                    </p>
+                    <p className="">↓</p>
+                    <p>
+                        Reply to the welcome email with your writeup
+                    </p>
+                    <p className="">↓</p>
+                    <p>
+                        Get a detailed ~300-word review within 72 hours
+                    </p>
                 </motion.div>
             </motion.div>
         </motion.div>
