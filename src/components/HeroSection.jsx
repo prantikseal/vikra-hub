@@ -86,13 +86,7 @@ const HeroSection = () => {
                 transition={{ delay: 0.9, duration: 0.5 }}
               >
                 <p className="max-w-4xl text-md font-bold pb-6 lg:pb-12 md:text-2xl 2xl:text-4xl leading[20]">
-                  I reverse engineer copy,
-                   <span className="relative">
-                    share transparent systems,
-                    
-                   </span>
-                  and present client case studies for content marketers
-                  who hate consuming surface-level knowledge.
+                  Long-form case studies for content marketers who hate consuming surface-level knowledge
                 </p>
               </motion.div>
               <motion.button
@@ -106,7 +100,7 @@ const HeroSection = () => {
               >
                 Subscribe Now
               </motion.button>
-              <p className="mt-8 px-4">Reply to welcome email - I’d love to share a feedback on your writing</p>
+              <p className="mt-8 px-4">Reply to the Welcome email - I’d love to analyze your Writing</p>
             </div>
           </main>
         </motion.div>

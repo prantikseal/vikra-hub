@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
     try {
-        const response = await fetch(`https://api.beehiiv.com/v2/publications/pub_${process.env.NEXT_PUBLIC_PUB_ID}/posts`, {
+        const response = await fetch(`https://api.beehiiv.com/v2/publications/pub_${process.env.NEXT_PUBLIC_PUB_ID}/posts?platform=all&direction=desc`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${process.env.NEXT_PUBLIC_BEEHIV_APIKEY}`

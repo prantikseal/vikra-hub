@@ -47,11 +47,7 @@ const SectionIntro = () => {
                             animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                             transition={{ duration: 0.5, delay: 0.8 }}
                         >
-                            I rewrite copies of popular brands better than the original, share my client case studies, and make top content minds send you subscriber-only guest emails
-
-                            <br />
-                            <br />
-                            …to make you a better content marketer
+                            All content is based on my thesis, experiments, and real work for clients. You will only see <br /> <span className=' italic bold'>dope</span> case studies and detailed documentation.
                         </motion.p>
                         <motion.div
                             className="flex gap-4"
