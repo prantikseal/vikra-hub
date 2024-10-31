@@ -33,7 +33,11 @@ const ScrollableBg = () => {
                 <div className={`flex items-center justify-center max-w-4xl md:max-w-6xl mx-auto ${isSticky ? ' p-4 md:p-16' : 'pt-0'
                     }`}>
                     <div className="p-4 rounded mx-6">
-                        <p className="text-center text-3xl md:text-6xl font-bold" id="harper-bold">
+                        <p className="text-center text-3xl md:text-6xl font-bold text-s" id="harper-bold" style={
+                            {
+                                textShadow: '0px 0px 5px rgba(0, 0, 0, 0.5)',
+                            }
+                        }>
                             Reading Cognition is as engaging as streaming Netflix or hanging out with friends -
                             <br /><br /><br />
 
@@ -55,7 +59,7 @@ const ScrollableBg = () => {
                         height={1000}
                         src="/images/newsletter-bg.png"
                         alt="bg"
-                        className=" mx-56"
+                        className=" mx-56 opacity-50"
                     />
                 </div>
             </motion.div>
