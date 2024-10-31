@@ -29,7 +29,7 @@ export default function Home() {
       <TestimonialSection other={true} />
       <ServesBestSection />
       <WhyCognitionSection />
-      <TestimonialSection other={false} />
+      <TestimonialSection other={false} personName="Ayush Chaturvedi" company="Co-founder, Elephas.ai" personImage="/images/profile/ayush.jpeg" testimonial={`“ I never miss out on Cognition. Love Vikra's take on copywriting and how nuanced he gets when analysing copy. I think content marketing is an art form, and Vikra is a top-notch artist.”`} />
       <ScrollableBg />
       <SubscriberTestimonials />
       <NewsletterSubscriptionSection />

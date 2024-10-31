@@ -29,7 +29,7 @@ const VikraWho = () => {
                                 I run two newsletters, two communities, create content on LinkedIn and Twitter, publish ebooks, and host exclusive cohorts for no more than 15 newsletter creators.
                             </p>
                             <div className="mt-12">
-                                <Link href="/" className="rounded-full px-12 py-4 bg-gradient-129 font-bold">
+                                <Link href="https://www.dopecontent.in/about-me" target='_blank' className="rounded-full px-12 py-4 bg-gradient-129 font-bold">
                                     Know more about me
                                 </Link>
                             </div>

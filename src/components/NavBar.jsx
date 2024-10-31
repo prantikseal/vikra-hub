@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Menu } from 'lucide-react';
 import Logo from './Logo';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ const NavBar = () => {
           <Logo className="relative flex items-center justify-start scale-125" />
           <div className="hidden md:flex space-x-14 pl-24">
             <NavLink className=" font-extrabold" href="#home">Home</NavLink>
-            <NavLink className=" font-extrabold" href="#weekly-cafe">Community</NavLink>
+              <NavLink className=" font-extrabold" href="https://docs.google.com/forms/d/e/1FAIpQLSc2ZdmkWiwNRSwo6nyRbwBu0Ii381iruGmoloi1tVPihN8BYg/viewform">Community</NavLink>
             <NavLink className=" font-extrabold" href="#cognition">Advertise</NavLink>
             {/* <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
             <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink> */}
@@ -86,11 +87,14 @@ const NavBar = () => {
             </div>
             <div className="mt-6">
               <nav className="grid gap-y-8">
-                <NavLink className=" font-extrabold" href="#home">Home</NavLink>
+                {/* <NavLink className=" font-extrabold" href="#home">Home</NavLink>
                 <NavLink className=" font-extrabold" href="#vikras-cafe">Newsletter</NavLink>
                 <NavLink className=" font-extrabold" href="#cognition">Cognition</NavLink>
                 <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
-                <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink>
+                <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink> */}
+                <NavLink className=" font-extrabold" href="#home">Home</NavLink>
+                <NavLink className=" font-extrabold" href="https://docs.google.com/forms/d/e/1FAIpQLSc2ZdmkWiwNRSwo6nyRbwBu0Ii381iruGmoloi1tVPihN8BYg/viewform">Community</NavLink>
+                <NavLink className=" font-extrabold" href="#cognition">Advertise</NavLink>
               </nav>
             </div>
           </div>
@@ -107,12 +111,13 @@ const NavBar = () => {
 
 
 const NavLink = ({ href, children, className }) => (
-  <a
+  <Link
     href={href}
     className={`text-gray-800 hover:text-gray-600 transition-colors duration-300 ${className || ''}`}
+    target='_blank'
   >
     {children}
-  </a>
+  </Link>
 );
 
 export default NavBar;
