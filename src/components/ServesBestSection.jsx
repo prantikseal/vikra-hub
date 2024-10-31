@@ -40,13 +40,13 @@ import Image from 'next/image';
 // Content Marketers
 
 const profiles = [
-    { name: 'Freelancers', color: 'bg-pink-100' },
-    { name: 'Content Creators', color: 'bg-yellow-100' },
-    { name: 'Content Writers', color: 'bg-pink-100' },
-    { name: 'Copywriters', color: 'bg-gray-100' },
-    { name: 'Service Business Owners', color: 'bg-pink-100' },
-    { name: 'D2C Marketing Heads', color: 'bg-yellow-100' },
-    { name: 'Content Marketers', color: 'bg-gray-100' },
+    { name: 'Freelancers', color: 'bg-pink-100', image: '/images/profile/profile-1.png' },
+    { name: 'Content Creators', color: 'bg-yellow-100', image: '/images/profile/profile-2.png' },
+    { name: 'Content Writers', color: 'bg-pink-100', image: '/images/profile/profile-3.png' },
+    { name: 'Copywriters', color: 'bg-gray-100', image: '/images/profile/profile-4.png' },
+    { name: 'Service Business Owners', color: 'bg-pink-100', image: '/images/profile/profile-1.png' },
+    { name: 'D2C Marketing Heads', color: 'bg-yellow-100', image: '/images/profile/profile-2.png' },
+    { name: 'Content Marketers', color: 'bg-gray-100', image: '/images/profile/profile-3.png' },
 ];
 
 const ServesBestSection = () => {
@@ -153,7 +153,7 @@ const ServesBestSection = () => {
                                     className={`flex-shrink-0 ${profile.color} rounded-full px-4 py-2 mx-6 border border-black w-max scale-110`}
                                 >
                                     <div className="flex items-center space-x-2">
-                                        <Image width={100} height={100} src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
+                                        <Image width={100} height={100} src={profile.image ? `${profile.image}` : `/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
                                         <span className="text-md font-medium whitespace-nowrap">{profile.name}</span>
                                     </div>
                                 </motion.div>
@@ -179,7 +179,7 @@ const ServesBestSection = () => {
                                     className={`flex-shrink-0 ${profile.color} rounded-full px-4 py-2 mx-6 border border-black w-max scale-110`}
                                 >
                                     <div className="flex items-center space-x-2">
-                                        <Image height={100} width={100} src={`/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
+                                        <Image height={100} width={100} src={profile.image ? `${profile.image}` : `/images/profile.png`} alt="Profile" className="w-8 h-8 rounded-full" />
                                         <span className="text-md font-medium whitespace-nowrap">{profile.name}</span>
                                     </div>
                                 </motion.div>
