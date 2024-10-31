@@ -55,7 +55,7 @@ const PartnerWithMe = () => {
                                     animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                                     transition={{ duration: 0.5, delay: 0.8 }}
                                 >
-                                    <Link href="/contact" className="rounded-full px-12 py-4 bg-gradient-129 font-bold">
+                                    <Link href="https://x.com/vikravardhan" target='_blank' className="rounded-full px-12 py-4 bg-gradient-129 font-bold">
                                         Collaborate with me
                                     </Link>
                                 </motion.div>

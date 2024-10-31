@@ -30,7 +30,9 @@ const NavBar = () => {
             <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink> */}
           </div>
           <div className="hidden md:block">
-            <button className="bg-[#DC724A] text-black font-extrabold px-9 py-4 rounded-full hover:bg-[#d17c56] transition-colors duration-300">
+            <button className="bg-[#DC724A] text-black font-extrabold px-9 py-4 rounded-full hover:bg-[#d17c56] transition-colors duration-300"
+                onClick={() => window.open('https://cognition.beehiiv.com/', '_blank')}
+            >
               Subscribe Now
             </button>
           </div>
@@ -93,7 +95,7 @@ const NavBar = () => {
             </div>
           </div>
           <div className="py-6 px-5">
-            <button className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#DC724A] hover:bg-[#d17c56]">
+            <button className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#DC724A] hover:bg-[#d17c56]" onClick={() => window.open('https://cognition.beehiiv.com/', '_blank')}>
               Subscribe Now
             </button>
           </div>

@@ -102,6 +102,7 @@ const HeroSection = () => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.1, duration: 0.5 }}
+                onClick={() => window.open('https://cognition.beehiiv.com/', '_blank')}
               >
                 Subscribe Now
               </motion.button>

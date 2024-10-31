@@ -4,7 +4,7 @@ import "./globals.css";
 const manrope = Manrope({ subsets: ["latin"]});
 
 export const metadata = {
-  title: "Dope Content",
+  title: "Cognition",
   description: "A dope website with dope content",
 };
 

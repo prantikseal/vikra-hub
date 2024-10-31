@@ -1,3 +1,4 @@
+"use client"
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
@@ -11,9 +12,13 @@ import SubscriberTestimonials from "@/components/SubscriberTestimonials";
 import TestimonialSection from "@/components/TestimonialSection";
 import VikraWho from "@/components/VikraWho";
 import WhyCognitionSection from "@/components/WhyCognitionSection";
+import { useEffect } from "react";
 
 
 export default function Home() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }, []);
   return (
     <>
   <div className="div">

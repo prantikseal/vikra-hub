@@ -82,6 +82,12 @@ const testimonials = [
         Whatever you throw at him, his resulting copy will come at you in an absorbing manner and won't let you go until you finish reading the last word. 
         His words are not the vice-like grip of an arm wrestler, but the warm blanket across your shoulders on a chilly winter night.`,
         profileImage: '/images/profile/Abhilash.png'
+    }, {
+        id: 9,
+        name: 'Tushar Tayal',
+        role: 'Content Creator',
+        text: `I read cognition whenever I want to get to know something new about content.I keep distrubing Vikra directly but I realised I shouldn't so I go to the second best option i.e. his newsletter.When I was starting out in writing and freelancing, I had a few resources but not like this one which breaks everything down to its basic.If you haven't read it - I am just glad I am getting less competition`,
+        profileImage: '/images/profile/Tushar_Tayal.jpg'
     }
 ];
 
@@ -108,7 +114,7 @@ const SubscriberTestimonials = () => {
                             className="bg-gradient-129 rounded-3xl p-6 mb-4"
                         >
                             <div className="flex items-center mb-4">
-                                <Image width={40} height={40} src={testimonial.profileImage} alt="Avatar" className="w-10 h-10 rounded-full mr-4" />
+                                <Image width={120} height={140} src={testimonial.profileImage} alt="Avatar" className="w-10 h-10 rounded-full mr-4 object-cover" />
                                 <div className="client-details">
                                     <h3 className="font-bold text-lg">{testimonial.name}</h3>
                                     <p className="text-sm">{testimonial.role}</p>
