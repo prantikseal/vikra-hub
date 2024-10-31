@@ -47,7 +47,7 @@ const PartnerWithMe = () => {
                                     animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
                                 >
-                                    Show your work to 600+ active readers in content marketing; majorly branching into writers, freelancers, content creators
+                                    Show your work to 1000+ active readers in content marketing; majorly branching into writers, freelancers, content creators
                                 </motion.p>
                                 <motion.div
                                     className="mt-12"

@@ -56,7 +56,7 @@ const SectionIntro = () => {
                             transition={{ duration: 0.5, delay: 1 }}
                         >
                             <Image src="/images/intro-readers.png" alt="hero image" width={206} height={54} />
-                            <p className="max-w-32">Join the fellow 600+ readers</p>
+                            <p className="max-w-32">Join the fellow 1000+ readers</p>
                         </motion.div>
                     </div>
                 </motion.div>

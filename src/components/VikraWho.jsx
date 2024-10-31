@@ -22,11 +22,14 @@ const VikraWho = () => {
                         <div className="flex-col">
                             <h2 className="text-5xl md:text-7xl font-bold" id="harper-bold">Vikra Who?</h2>
                             <p className="text-lg font-semibold text-[#363434] mt-8 max-w-md">
-                                I am a freelance newsletter growth strategist and an email copywriter for ecom, B2B SaaS, and creator-led brands.
-                                <br /> <br />
-                                After working with 40+ brands, crafting blogs, social media content, video scripts, etc., for two years, I niched down to newsletters and helped 15+ publications grow from scratch.
-                                <br /> <br />
-                                I run two newsletters, two communities, create content on LinkedIn and Twitter, publish ebooks, and host exclusive cohorts for no more than 15 newsletter creators.
+                                Heyy 👋
+<br /><br />
+                                In my four years of writing online, I grew from a fiction writer to a newsletter strategist for ~20 brands.
+<br /><br />
+                                Currently, I freelance, run three newsletters, two communities, a subReddit, create no-code products, and run a cohort.
+<br /><br />
+                                Cognition in a nutshell is a documentation of all I do - with zero filters and secrets.
+
                             </p>
                             <div className="mt-12">
                                 <Link href="https://www.dopecontent.in/about-me" target='_blank' className="rounded-full px-12 py-4 bg-gradient-129 font-bold">

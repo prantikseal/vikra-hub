@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const PostSkeleton = () => (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="w-full h-48 bg-gray-200 animate-pulse" />
+        {/* <div className="w-full h-48 bg-gray-200 animate-pulse" /> */}
         <div className="p-4 space-y-4">
             <div className="h-6 bg-gray-200 rounded animate-pulse" />
             <div className="h-4 bg-gray-200 rounded w-2/3 animate-pulse" />
@@ -63,7 +63,7 @@ const RecentPosts = () => {
                 <h2 className="font-bold mb-6 text-center text-6xl" id="harper-bold">Recent Posts</h2>
                 <p className="text-gray-600 text-center text-lg mb-12">Stay updated with our latest articles and insights</p>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {[...Array(6)].map((_, index) => (
+                    {[...Array(9)].map((_, index) => (
                         <PostSkeleton key={index} />
                     ))}
                 </div>
@@ -129,13 +129,13 @@ const RecentPosts = () => {
                         className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
                         whileHover={{ y: -5 }}
                     >
-                        {post.thumbnail_url && (
+                        {/* {post.thumbnail_url && (
                             <img
                                 src={post.thumbnail_url}
                                 alt={post.title}
                                 className="w-full h-48 object-cover"
                             />
-                        )}
+                        )} */}
                         <div className="p-4">
                             <h3 className="text-lg font-semibold mb-2">
                                 {post.title}

@@ -26,7 +26,7 @@ const NavBar = () => {
           <div className="hidden md:flex space-x-14 pl-24">
             <NavLink className=" font-extrabold" href="#home">Home</NavLink>
               <NavLink className=" font-extrabold" href="https://docs.google.com/forms/d/e/1FAIpQLSc2ZdmkWiwNRSwo6nyRbwBu0Ii381iruGmoloi1tVPihN8BYg/viewform">Community</NavLink>
-              <NavLink className=" font-extrabold" href="https://x.com/vikravardhan">Advertise</NavLink>
+              <NavLink className=" font-extrabold" href="https://www.passionfroot.me/vikra">Advertise</NavLink>
             {/* <NavLink className=" font-extrabold" href="#digital-store">Digital Store</NavLink>
             <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink> */}
           </div>
@@ -94,7 +94,7 @@ const NavBar = () => {
                 <NavLink className=" font-extrabold" href="#about-me">About Me</NavLink> */}
                 <NavLink className=" font-extrabold" href="#home">Home</NavLink>
                 <NavLink className=" font-extrabold" href="https://docs.google.com/forms/d/e/1FAIpQLSc2ZdmkWiwNRSwo6nyRbwBu0Ii381iruGmoloi1tVPihN8BYg/viewform">Community</NavLink>
-                <NavLink className=" font-extrabold" href="https://x.com/vikravardhan">Advertise</NavLink>
+                <NavLink className=" font-extrabold" href="https://www.passionfroot.me/vikra">Advertise</NavLink>
               </nav>
             </div>
           </div>
