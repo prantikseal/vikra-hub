@@ -33,26 +33,26 @@ const Footer = () => {
                             <h3 className="font-bold text-gray-800 mb-2">Pages</h3>
                             <ul className="space-y-2">
                                 <li><a href="#" className=" hover:text-gray-800">Home</a></li>
-                                <li><a href="#" className=" hover:text-gray-800">About Page</a></li>
+                                <li><a href="https://www.dopecontent.in/about-me" className=" hover:text-gray-800">About Page</a></li>
                             </ul>
                         </div>
 
                         <div>
                             <h3 className="font-bold text-gray-800 mb-2">Products</h3>
                             <ul className="space-y-2">
-                                <li><a href="#" className=" hover:text-gray-800">Cognition</a></li>
-                                <li><a href="#" className=" hover:text-gray-800">Vikra&apos;s Cafe</a></li>
-                                <li><a href="#" className=" hover:text-gray-800">Newsletter Cohort</a></li>
+                                <li><a href="https://cognition.beehiiv.com/" className=" hover:text-gray-800">Cognition</a></li>
+                                <li><a href="https://vikra.substack.com/" className=" hover:text-gray-800">Vikra&apos;s Cafe</a></li>
+                                {/* <li><a href="#" className=" hover:text-gray-800">Newsletter Cohort</a></li> */}
                             </ul>
                         </div>
 
-                        <div>
+                        {/* <div>
                             <h3 className="font-bold text-gray-800 mb-2">Others</h3>
                             <ul className="space-y-2">
                                 <li><a href="#" className=" hover:text-gray-800">Privacy Policy</a></li>
                                 <li><a href="#" className=" hover:text-gray-800">Terms & Conditions</a></li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
