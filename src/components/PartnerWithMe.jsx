@@ -8,7 +8,7 @@ const PartnerWithMe = () => {
     const isInView = useInView(ref, { once: true, amount: 0.3 });
 
     const partnerStats = [
-        { label: "Total Subscribers", value: "600+" },
+        { label: "Total Subscribers", value: "1000+" },
         { label: "30-Day Open Rate", value: "45%" },
         { label: "30-Day CTR", value: "15%" },
         { label: "Frequency", value: "Weekly" }
