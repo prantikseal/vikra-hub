@@ -86,7 +86,7 @@ const HeroSection = () => {
                 transition={{ delay: 0.9, duration: 0.5 }}
               >
                 <p className="max-w-4xl text-md font-bold pb-6 lg:pb-12 md:text-2xl 2xl:text-4xl leading[20]">
-                  Long-form case studies for content marketers who hate consuming surface-level knowledge
+                  Long-form case studies for content marketers <br /> who hate consuming surface-level knowledge
                 </p>
               </motion.div>
               <motion.button
@@ -96,7 +96,7 @@ const HeroSection = () => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.1, duration: 0.5 }}
-                onClick={() => window.open('https://cognition.beehiiv.com/', '_blank')}
+                onClick={() => document.getElementById('newsletter').scrollIntoView({ behavior: 'smooth' })}
               >
                 Subscribe Now
               </motion.button>

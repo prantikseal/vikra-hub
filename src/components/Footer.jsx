@@ -19,7 +19,7 @@ const Footer = () => {
                             <Link href="https://twitter.com/vikravardhan" target="_blank">
                                 <Twitter className="w-5 h-5 text-gray-800" />
                             </Link>
-                            <Link href="mailto:vvriteups@gmail.com ">
+                            <Link href="mailto: vikra@dopecontent.in">
                                 <Mail className="w-5 h-5 text-gray-800" />
                             </Link>
                             <Link href="https://www.linkedin.com/in/vikra-vardhan-freelance-writer/" target="_blank">

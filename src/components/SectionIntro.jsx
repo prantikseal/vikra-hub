@@ -37,7 +37,7 @@ const SectionIntro = () => {
                         animate={isInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                     >
-                        Most marketing newsletters repeat the same popular strategies. We don’t do that.
+                        Most marketing newsletters repeat the same popular strategies. We don’t.
                     </motion.h2>
 
                     <div className="refferal-section">
@@ -56,7 +56,7 @@ const SectionIntro = () => {
                             transition={{ duration: 0.5, delay: 1 }}
                         >
                             <Image src="/images/intro-readers.png" alt="hero image" width={206} height={54} />
-                            <p className="max-w-32">Join the fellow 1000+ readers</p>
+                            <p className="max-w-32">Join 1000+ <br /> fellow readers</p>
                         </motion.div>
                     </div>
                 </motion.div>

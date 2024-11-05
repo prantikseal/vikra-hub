@@ -60,7 +60,7 @@ const WhyCognitionSection = () => {
             variants={containerVariants}
         >
             <motion.h1
-                className="text-xl text-gray-400 text-center mb-8"
+                className="text-xl text-black text-center mb-8"
                 variants={itemVariants}
             >
                 Why Cognition? What&apos;s in it for you?
@@ -115,22 +115,91 @@ const WhyCognitionSection = () => {
                         elsewhere—not on socials, not on the web, only in your inbox.
                     </p>
                 </motion.div> */}
-                <motion.div variants={itemVariants}>
-                    {/* <Image src="/images/normal-box.png" alt="Why Cognition 1" width={500} height={500} className="mb-4 w-full" /> */}
-                    <h3 className="text-2xl font-bold mb-4">
+                <motion.div
+                    variants={itemVariants}
+                    className="max-w-6xl mx-auto"
+                >
+                    <h3 className="text-2xl font-bold mb-12 text-center">
                         Get your writing reviewed!
                     </h3>
-                    <p className="">
-                        Subscribe
-                    </p>
-                    <p className="">↓</p>
-                    <p>
-                        Reply to the welcome email with your writeup
-                    </p>
-                    <p className="">↓</p>
-                    <p>
-                        Get a detailed ~300-word review within 72 hours
-                    </p>
+
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {[
+                            {
+                                number: "01",
+                                title: "Subscribe",
+                                description: "Join our community of writers and start your journey"
+                            },
+                            {
+                                number: "02",
+                                title: "Send Your Work",
+                                description: "Reply to the welcome email with your writeup for review"
+                            },
+                            {
+                                number: "03",
+                                title: "Get Feedback",
+                                description: "Receive a detailed 300-word review within 72 hours"
+                            }
+                        ].map((step, index) => (
+                            <motion.div
+                                key={index}
+                                className="group relative w-[320px] cursor-pointer"
+                                animate={{
+                                    scale: [1, 1, 1],
+                                    transition: {
+                                        times: [0, 0.2, 1],
+                                        duration: 9, // Total duration for all three steps
+                                        repeat: Infinity,
+                                    }
+                                }}
+                            >
+                                <motion.div
+                                    className="absolute -top-3 -left-3 w-10 h-10 bg-[#FF6B2C] rounded-full flex items-center justify-center text-base font-bold text-white"
+                                    animate={{
+                                        scale: [1, 1.2, 1],
+                                        transition: {
+                                            times: [
+                                                0,
+                                                (index * 0.33) + 0.1,
+                                                (index * 0.33) + 0.33
+                                            ],
+                                            duration: 9,
+                                            repeat: Infinity,
+                                            ease: "easeInOut"
+                                        }
+                                    }}
+                                >
+                                    {step.number}
+                                </motion.div>
+                                <motion.div
+                                    className="bg-gradient-129 bg-opacity-40 border-2 border-gray-200 p-8 rounded-xl transition-colors duration-300 min-h-[180px] flex flex-col justify-center"
+                                    animate={{
+                                        borderColor: ['#e5e7eb', '#FF6B2C', '#e5e7eb'],
+                                        boxShadow: [
+                                            '0 0 0 rgba(255, 107, 44, 0)',
+                                            '0 0 20px rgba(255, 107, 44, 0.3)',
+                                            '0 0 0 rgba(255, 107, 44, 0)'
+                                        ],
+                                        transition: {
+                                            times: [
+                                                0,
+                                                (index * 0.33) + 0.1,
+                                                (index * 0.33) + 0.33
+                                            ],
+                                            duration: 9,
+                                            repeat: Infinity,
+                                            ease: "easeInOut"
+                                        }
+                                    }}
+                                >
+                                    <div className="text-xl font-semibold mb-4">{step.title}</div>
+                                    <p className="text-gray-700 text-base leading-relaxed">
+                                        {step.description}
+                                    </p>
+                                </motion.div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </motion.div>
             </motion.div>
         </motion.div>

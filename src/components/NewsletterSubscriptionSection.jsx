@@ -229,6 +229,7 @@ const NewsletterSubscriptionSection = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
+            id="newsletter"
         >
             <div className="flex justify-center w-full">
                 <div className="container max-w-5xl overflow-hidden">
@@ -328,12 +329,14 @@ const NewsletterSubscriptionSection = () => {
                     className="mx-auto w-full"
                     variants={itemVariants}
                 >
+                    <p className="text-lg font-semibold text-center text-gray-500 px-4">
+                        Unless it’s Scuba, there is nothing more fun than diving into Rabbit Holes
+                    </p>
                     <div className="flex justify-center mt-8">
                         <motion.form
                             onSubmit={handleSubscribe}
                             className="border rounded-3xl border-[#FEBDA2] bg-white flex scale-100 md:scale-150"
                             whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
                         >
                             <input
                                 type="email"
